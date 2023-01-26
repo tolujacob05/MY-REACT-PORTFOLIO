@@ -1,0 +1,43 @@
+.social {
+    position: absolute;
+    top: 35rem;
+    color: rgb(226, 151, 10);
+    margin: 1rem;
+}
+.social h3 {
+    font-size: 1rem;
+}
+.icon1 svg {
+    width: 40px;
+}
+.icon2 svg {
+    width: 40px;
+}
+.icon3 svg {
+    width: 40px;
+}
+.icon4 svg {
+    width: 40px;
+    color: rgb(18, 210, 18);
+}
+svg {
+    color: white;
+}
+@media (max-width: 568px) {
+    .social h3 {
+        font-size: 0.5rem;
+    }
+    .icon1 svg {
+        width: 20px;
+    }
+    .icon2 svg {
+        width: 20px;
+    }
+    .icon3 svg {
+        width: 20px;
+    }
+    .icon4 svg {
+        width: 20px;
+        color: rgb(18, 210, 18);
+    }
+}
