@@ -1,6 +1,7 @@
 import React from "react";
 import Tolu from '../Img/Tolu.jpeg';
-import './css/Home.css'
+import './css/Home.css';
+
 import { motion } from 'framer-motion'
 import { MdWavingHand } from 'react-icons/md'
 
@@ -52,6 +53,7 @@ const lineVariant = {
 const Home = () => {
     return (
         <>
+           
             <div className="home">
                 <motion.div className="image" 
                     variants={imageVariants}

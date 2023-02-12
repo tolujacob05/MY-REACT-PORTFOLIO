@@ -77,7 +77,6 @@ const Nav = () => {
                 animate = 'visible'
                 whileHover={'hover'}
             >
-                <a href="home">Home</a>
                 <a href="projects">Projects</a>
             </motion.div>
 
