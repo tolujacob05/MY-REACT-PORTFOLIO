@@ -1,7 +1,9 @@
 .n-wrapper {
-height: 10vh;
-display: flex;
-justify-content: space-between;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 40px;
 }
 
 .n-left {
@@ -43,4 +45,13 @@ justify-content: space-between;
 
 .n-button {
     flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+    .n-list {
+      display: none;
+    }
+    .n-button {
+        display: none;
+    }
 }
