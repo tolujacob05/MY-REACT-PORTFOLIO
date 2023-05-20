@@ -8,7 +8,7 @@
 .i-left {
     display: flex;
     position: relative;
-    flex: 1;
+    /* flex: 1; */
     flex-direction: column;
     gap: 2rem;
     margin: 20px;
@@ -141,6 +141,37 @@
     top: -18%;
     left: 56%;
     filter: blur(72px);
+}
+
+@media screen and (max-width: 1200px) {
+    .intro {
+        flex-direction: column;
+        gap: 2rem;
+        height: 64rem;
+    }
+
+    .i-name {
+        text-align: center;
+    }
+
+    .i-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .i-right {
+        left: -3rem;
+    }
+
+    .floatingdiv {
+        /* height: 3.5rem; */
+        width: 10rem;
+        gap: 0px;
+    }
+
+    .blur {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {

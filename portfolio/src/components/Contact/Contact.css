@@ -13,7 +13,7 @@
     flex: 1;
 }
 
-.c-right>form {
+.c-right > form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -44,7 +44,7 @@ textarea{
     height: 4rem!important;
 }
 
-.c-blur1{
+/* .c-blur1{
     top: 10rem;
     left: 8rem;
 }
@@ -52,17 +52,28 @@ textarea{
 .c-blur1{
     top: 150rem;
     left: 30rem;
+} */
+
+@media screen and (max-width: 1200px){
+    /* .awesome {
+        text-align: center;
+    } */
 }
 
 @media screen and (max-width: 480px) {
     .contact-form{
         padding: 0;
         flex-direction: column;
-        gap: 5rem;
+        /* gap: 2rem; */
         height: 40rem;
     }
+
     .c-right .user{
         width: 16rem;
+    }
+
+    .awesome {
+        text-align: center;
     }
 
 }   

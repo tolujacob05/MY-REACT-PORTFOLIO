@@ -78,6 +78,17 @@ const Services = () => {
                     </motion.div>
                     <div className="blur s-blur2" style={{ background: "var(--purple)"}}></div>
                 </div>
+
+                {/* <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="20.5" cy="20.5" r="20.5" fill="white"/>
+</svg>
+
+<svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.344 3.244H0.312V0.488H15.782V3.244H9.724V19H6.344V3.244Z" fill="#5B9BF3"/>
+</svg> */}
+
+
+
             </div>
         </>
     )
