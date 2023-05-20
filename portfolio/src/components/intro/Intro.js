@@ -10,6 +10,7 @@ import glassesimoji from "../../img/glassesimoji.png"
 import { themeContext } from "../../Content";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 
 const Intro = () => {
@@ -30,7 +31,9 @@ const Intro = () => {
                         and development, producing the 
                         Quality work</span>
                     </div>
-                    <button className="button i-button">Hire me</button>
+                    <Link activeClass="active" to="Contact" spy={true} smooth={true}>
+                        <button className="button i-button">Hire me</button>
+                    </Link>
                     <div className="i-icons">
                         <a href="https://www.github.com/tolujacob05">
                             <img src={Github} alt="" />

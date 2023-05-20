@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Services.css";
 import HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
@@ -8,10 +8,13 @@ import Card from "../Card/Card";
 import { themeContext } from "../../Content";
 import { useContext } from "react";
 import { motion } from "framer-motion";
+import Pop1 from "../../Modals/Pop1/Pop1";
 
 const Services = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+
+    const [ openModal, setOpenModal ] = useState(false);
 
     const transition = {
         duration: 1,
@@ -62,6 +65,7 @@ const Services = () => {
                             heading = {"Developer"}
                             detail = {"HTML, CSS, SCSS/SASS, REACT, TYPESCRIPT"}
                         />
+                        <Pop1 open={openModal} onClose={() => setOpenModal(false)}/>
                     </motion.div>
 
                     {/* third card */}
