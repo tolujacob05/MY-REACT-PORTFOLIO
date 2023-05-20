@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* body {
+  width: 100%;
+} */
+
 :root
 {
     --tomato: tomato;
@@ -21,7 +25,8 @@
 .App{
     padding: 0.5rem 3.5rem;
     overflow: hidden;
-    color: var(--black);   
+    color: var(--black);  
+    /* width: 100%;  */
 }
 
 .button {
@@ -43,8 +48,7 @@
   }
 
   @media screen and (max-width: 480px) {
-    .App {
+    /* .App {
       padding: 0.5rem 1rem;
-
-    }
+    } */
   }

@@ -2,8 +2,7 @@
     display: flex;
     height: 30rem;
     margin-bottom: 8rem;
-    margin-top: 4rem;
-    margin-bottom: 13rem; 
+    margin-top: 4rem; 
     padding-top: 3rem;
     padding: 0 3rem 0 3rem;
 }
@@ -42,12 +41,12 @@
     position: relative;
 }
 
-.cards>* {
+.cards >* {
     position: absolute;
 }
 
 /* blur */
-.s-blur2 {
+/* .s-blur2 {
     left: 14rem;
     top: 8rem;
 }
@@ -59,22 +58,48 @@
 
 .s-blur3 {
     left: -30rem;
+} */
+
+@media screen and (max-width: 1200px) {
+    .services {
+        margin-top: 10rem;
+        flex-direction: column;
+        gap: 2rem;
+        height: 66rem;
+        padding: 0;
+        position: relative;
+        left: 8rem;
+        margin-bottom: 0rem;
+    }
+
+    .cards {
+        margin-top: 5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .services {
-      margin-top: 0;
-      flex-direction: column;
-      gap: 2rem;
-      height: 66rem;
-      padding: 0;
+        margin-top: 0;
+        flex-direction: column;
+        gap: 2rem;
+        height: 66rem;
+        padding: 0;
+        position: relative;
+        left: 0rem;
+        margin-bottom: 19rem;
     }
+
+    .awesome > a > button {
+        margin-bottom: 10rem;
+    }
+
     .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20rem;
-      transform: translateY(-30%);
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        transform: translateY(-30%);
     }
+
     .cards > * {
       position: static;
     }

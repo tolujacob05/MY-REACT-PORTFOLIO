@@ -1,7 +1,7 @@
 import React from "react";
 import './Navbar.css'
 import Toggle from "../Toggle/Toggle"
-import { Link } from "react-scroll";
+import { Link, ScrollLink } from "react-scroll";
 
 const Navbar = () => {
     return (
@@ -37,7 +37,9 @@ const Navbar = () => {
                             
                         </ul>
                     </div>
-                    <button className="button n-button">Contact Me</button>
+                    <Link activeClass="active" to="Contact" spy={true} smooth={true}>
+                        <button className="button n-button">Contact Me</button>
+                    </Link>
                 </div>
             </div>
         </>
