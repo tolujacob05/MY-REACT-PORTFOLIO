@@ -97,8 +97,9 @@
     font-weight: 400;
 }
 
-.i-right >img {
+.i-right > img {
     height: 350px;
+    border-radius: 15px;
 }
 
 /* .i-right >* {

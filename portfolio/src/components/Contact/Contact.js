@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./Contact.css"
-import EmailJS from "@emailjs/browser"
+import EmailJS from "@emailjs/browser";
+import Lottie from "lottie-react";
+import Finger from "./Finger.json"
 
 const Contact = () => {
     const form = useRef();
@@ -19,6 +21,8 @@ const Contact = () => {
             console.log(error.text);
         });
     };
+
+
     return (
         <>
             <div className="contact-form" id="Contact">
@@ -29,7 +33,9 @@ const Contact = () => {
                         <div className="blur s-blur1" style={{ background: "#abf1ff94"}}></div>
                     </div>
                 </div>
-
+                <div className="contact-lottie">
+                    <Lottie animationData={Finger} />
+                </div>
                 <div className="c-right">
                     <form ref={form} onSubmit={sendEmail}>
                         <div className="blur c-blur4" style={{ background: "var(--purple)"}}></div>
@@ -43,6 +49,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
+            
         </>
     )
 }

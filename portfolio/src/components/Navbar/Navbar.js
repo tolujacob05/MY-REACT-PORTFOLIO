@@ -1,7 +1,7 @@
 import React from "react";
 import './Navbar.css'
 import Toggle from "../Toggle/Toggle"
-import { Link, ScrollLink } from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
     return (
