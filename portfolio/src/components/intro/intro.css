@@ -1,105 +1,114 @@
 .intro {
-    display: flex;
-    height: 77vh;
-    margin-top: 6rem;
-    padding: 40px;
+  display: flex;
+  height: 77vh;
+  margin-top: 6rem;
+  padding: 40px;
 }
 
 .i-left {
-    display: flex;
-    position: relative;
-    /* flex: 1; */
-    flex-direction: column;
-    gap: 2rem;
-    margin: 20px;
+  display: flex;
+  position: relative;
+  /* flex: 1; */
+  flex-direction: column;
+  gap: 2rem;
+  margin: 20px;
 }
 
 .i-name {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.i-name >:nth-child(1) {
-    color: var(--black);
-    font-size: 3rem;
-    font-weight: bold;
+.i-name > :nth-child(1) {
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: bold;
+  animation-name: moveInLeft;
+  animation-duration: 5s;
+  animation-timing-function: ease;
 }
 
-.i-name >:nth-child(2) {
-    color: var(--tomato);
-    font-weight: bold;
-    font-size: 3rem;
+.i-name > :nth-child(2) {
+  color: var(--tomato);
+  font-weight: bold;
+  font-size: 3rem;
+  animation-name: moveInRight;
+  animation-duration: 5s;
+  animation-timing-function: ease;
 }
 
-.i-name >:nth-child(3) {
-    font-weight: 100;
-    font-size: 14px;
-    color: var(--gray);
-    margin-top: 10px;
+.i-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-timing-function: ease;
 }
 
 .i-button {
-    width: 8rem;
-    height: 4rem;
+  width: 8rem;
+  height: 4rem;
 }
 
 .i-icons {
-    margin-top: 3rem;
-    display: flex;
-    gap: 0rem;
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
 }
 
-.i-icons >*{
-    transform: scale(0.5);
+.i-icons > * {
+  transform: scale(0.5);
 }
 
-.i-icons >*:hover{
-    cursor: pointer;
+.i-icons > *:hover {
+  cursor: pointer;
 }
 
 .i-right {
-    display: flex;
-    position: relative;
-    transform: translateX(-10%);
-    gap: 15px;
+  display: flex;
+  position: relative;
+  transform: translateX(-10%);
+  gap: 15px;
 }
 
 .i-middle {
-    display: grid;
+  display: grid;
 }
 
-.i-middle >img {
-    width: 100px;
-    height: 70px;
-    transform: translateX(50%);
+.i-middle > img {
+  width: 100px;
+  height: 70px;
+  transform: translateX(50%);
 }
 
 .i-mobile {
-    display: flex;
-    border: 1px solid wheat;
-    height: 5.5rem;
-    align-items: center;
-    gap: 15px;
-    margin: 15px;
-    padding: 15px;
-    background: wheat;
-    border-radius: 17px;
+  display: flex;
+  border: 1px solid wheat;
+  height: 5.5rem;
+  align-items: center;
+  gap: 15px;
+  margin: 15px;
+  padding: 15px;
+  background: wheat;
+  border-radius: 17px;
 }
 
-.i-mobile >img {
-    width: 100px;
-    height: 70px;
+.i-mobile > img {
+  width: 100px;
+  height: 70px;
 }
 
-.i-mobile>span {
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 400;
+.i-mobile > span {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .i-right > img {
-    height: 350px;
-    border-radius: 15px;
+  height: 350px;
+  border-radius: 15px;
 }
 
 /* .i-right >* {
@@ -108,106 +117,145 @@
 } */
 
 .floatingdiv {
-    display: flex;
-    gap: 15px;
-    z-index: 1;
-    background: wheat;
-    box-shadow: var(--boxShadow);
-    border-radius: 17px;
-    align-items: center;
-    padding: 0px 28px 0px 0px;
-    height: 5.5rem;
-    justify-content: center;
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+  background: wheat;
+  box-shadow: var(--boxShadow);
+  border-radius: 17px;
+  align-items: center;
+  padding: 0px 28px 0px 0px;
+  height: 5.5rem;
+  justify-content: center;
 }
 
-.floatingdiv >img {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
-    margin: 15px;
+.floatingdiv > img {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  margin: 15px;
 }
 
-.floatingdiv>span {
-    font-family: sans-serif;
-    font-size: 16px;
+.floatingdiv > span {
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .blur {
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    z-index: -9;
-    top: -18%;
-    left: 56%;
-    filter: blur(72px);
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .intro {
-        flex-direction: column;
-        gap: 2rem;
-        height: 64rem;
-    }
+  .intro {
+    flex-direction: column;
+    gap: 2rem;
+    height: 64rem;
+  }
 
-    .i-name {
-        text-align: center;
-    }
+  .i-name {
+    text-align: center;
+  }
 
-    .i-icons {
-        display: flex;
-        justify-content: center;
-    }
+  .i-icons {
+    display: flex;
+    justify-content: center;
+  }
 
-    .i-right {
-        left: -3rem;
-    }
+  .i-right {
+    left: -3rem;
+  }
 
-    .floatingdiv {
-        /* height: 3.5rem; */
-        width: 10rem;
-        gap: 0px;
-    }
+  .floatingdiv {
+    /* height: 3.5rem; */
+    width: 10rem;
+    gap: 0px;
+  }
 
-    .blur {
-        display: none;
-    }
+  .blur {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .intro {
-      flex-direction: column;
-      gap: 2rem;
-      height: 64rem;
-    }
+  .intro {
+    flex-direction: column;
+    gap: 2rem;
+    height: 64rem;
+  }
 
-    .i-right {
-      transform: scale(0.5);
-      left: -3rem;
-    }
+  .i-right {
+    transform: scale(0.5);
+    left: -3rem;
+  }
 
-    .i-right>img {
-        transform: translateX(-55%);
-    }
+  .i-right > img {
+    transform: translateX(-55%);
+  }
 
-    .i-right .blur {
-      display: none;
-    }
+  .i-right .blur {
+    display: none;
+  }
 
-    .i-middle {
-        transform: translateX(-60%);
-    }
+  .i-middle {
+    transform: translateX(-60%);
+  }
 
-    .floatingdiv {
-        transform: translateX(-60%);
-    }
+  .floatingdiv {
+    transform: translateX(-60%);
+  }
 
-    .floating-div:nth-of-type(1){
-      /* display: none; */
-      top: -7rem !important;;
-    }
+  .floating-div:nth-of-type(1) {
+    /* display: none; */
+    top: -7rem !important;
+  }
 }
-
-
-

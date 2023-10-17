@@ -16,13 +16,19 @@ import { EffectFlip, Pagination, Navigation } from "swiper";
 import Capture2 from "../../img/capture2.jpg";
 import pic from "../../img/pic.jpg";
 import pic1 from "../../img/pic1.jpg";
-import Capture5 from "../../img/capture5.jpg";
 import forkify from "../../img/forkify.png";
 import bankapp from "../../img/bankapp.png";
+import img2 from "../../img/img2.jpg";
+import Screenshot from "../../img/Screenshot.png";
+import screenshot2 from "../../img/screenshot2.png";
 const Portfolio = () => {
   return (
     <>
       <div className="portfolio" id="Portfolio">
+        <div className="bg-video">
+          <img className="bg-video__content" src={img2} alt="" />
+        </div>
+
         {/* heading */}
         <span>Recent Projects</span>
         <span>Portfolio</span>
@@ -36,23 +42,13 @@ const Portfolio = () => {
           modules={[EffectFlip, Pagination, Navigation]}
           className="portfolio-slider"
         >
-          {/* <SwiperSlide> */}
-          {/* <img src={Capture1} alt="" /> */}
-          {/* <div className="capture-1"> */}
-          {/* <span>Astract9 Assessment</span> */}
-          {/* <span>Hernalytics</span> */}
-          {/* <a rel="#" href="https://github.com/tolujacob05/react-map.git"> */}
-          {/* GitHub Link */}
-          {/* </a> */}
-          {/* </div> */}
-          {/* </SwiperSlide> */}
           <SwiperSlide>
             <img src={Capture2} alt="" />
             <div className="capture-1">
               <span>A simple react todo app</span>
               <a href="https://tolujacob-todo-app.netlify.app">click here</a>
             </div>
-          </SwiperSlide>{" "}
+          </SwiperSlide>
           <SwiperSlide>
             <img src={pic} alt="" />
             <div className="capture-1">
@@ -63,9 +59,13 @@ const Portfolio = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={Capture5} alt="" />
+            <img src={Screenshot} alt="" />
             <div className="capture-1">
-              <span>An ecommerce website built by me </span>
+              <span>
+                An App that lets you keep track and records of places you've
+                been to.
+              </span>
+              <a href="https://lucent-kitsune-a154b3.netlify.app">click here</a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -94,6 +94,16 @@ const Portfolio = () => {
                 A demo bank app that lets you run transaction from a friend to
                 another <br /> username: atm <br /> password: 2222
               </span>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={screenshot2} alt="" />
+            <div className="capture-1">
+              <span>
+                This is an app that lets you keep track of your running /
+                cycling / jogging activities.
+              </span>
+              <a href="http://bright-cuchufli-5a8ec2.netlify.app">click here</a>
             </div>
           </SwiperSlide>
         </Swiper>
