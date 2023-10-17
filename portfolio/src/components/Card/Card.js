@@ -1,17 +1,20 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({emoji, heading, detail, setOpenModal}) => {
-    return (
-        <>
-            <div className="card">
-                <img src={emoji} alt=""/>
-                <span>{heading}</span>
-                <span>{detail}</span>
-                <button className="c-button" onClick={() => setOpenModal(true)}>LEARN MORE</button>
-            </div>
-        </>
-    )
-}
+const Card = ({ emoji, heading, detail, setOpenModal }) => {
+  return (
+    <>
+      <div className="card">
+        <img src={emoji} alt="" />
+        <span>{heading}</span>
+        <span>{detail}</span>
+        <button
+          className="c-button"
+          onClick={() => setOpenModal(true)}
+        ></button>
+      </div>
+    </>
+  );
+};
 
 export default Card;
